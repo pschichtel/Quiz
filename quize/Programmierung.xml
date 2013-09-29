@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<quiz>
+    <config>
+        <!-- Gibt den Namen des Quiz an. -->
+        <entry name="name">Programmierung</entry>
+        <!-- Gibt an wie viele Punkte es pro richtige Antwort gibt. -->
+        <entry name="right_points">1</entry>
+        <!-- Gibt an wie viele Punkte pro falsche Antwort abgezeogen werden. -->
+        <entry name="wrong_points">0</entry>
+        <!-- Gibt an ob auch beim erneuten Versuch Punkte abgezeogen werden sollen. -->
+        <entry name="retry_decreasepoints">false</entry>
+        <!-- Gibt an ob man die Frage bei falscher Antwort wiederholt -->
+        <entry name="fail_retry">false</entry>
+        <!-- Gibt an ob bei einer falschen Antwort, die richtige angezeigt werden soll -->
+        <entry name="fail_showcorrect">false</entry>
+        <!-- Gibt an ob Sound abgespielt werden sollen (HTML5) -->
+        <entry name="playsounds">true</entry>
+        <!-- Gibt an welcher Text bei einer richtigen Antwort standardmäßig angezeigt werden soll -->
+        <entry name="default.right">Das ist korrekt!</entry>
+        <!-- Gibt an welcher Text bei einer falschen Antwort standardmäßig angezeigt werden soll -->
+        <entry name="default.wrong">Das war leider nicht die richtige Antwort.</entry>
+        <!-- Gibt an welcher Sound standardmä0ig bei richtigen Antworten abgespielt werden soll -->
+        <entry name="default.right_sound">default</entry>
+        <!-- Gibt an welcher Sound standardmä0ig bei falschen Antworten abgespielt werden soll -->
+        <entry name="default.wrong_sound">default</entry>
+        <!-- Gibt die Nachricht an die beim starten des Quiz angezeigt wird-->
+        <entry name="welcome">
+            Willkommen beim Quiz über Programmierung!
+            Hier erwarten dich {QUESTIONS} Fragen über verschiedene Themen der Programmierung.
+
+            Good luck and have fun!
+        </entry>
+        <!-- Gibt die Nachricht an die beim abschließen des Quiz angezeigt werden soll -->
+        <entry name="completed"><![CDATA[
+            Du hast das Quiz abgeschlossen und dabei {POINTS} Punkte erreicht!
+            Dabei wurden {RIGHT} Fragen ({RIGHT%}%) richtig und {WRONG} Fragen ({WRONG%}%) falsch beantwortet
+        ]]></entry>
+    </config>
+    <questions>
+        <!--
+        <question>
+            <text>Frage</text>
+            <answers>
+                <answer correct="true">1. Antwort (richtig)</answer>
+                <answer>2. Antwort (falsch)</answer>
+                <answer>3. Antwort (falsch)</answer>
+            </answers>
+            <right>Nachricht bei richtiger Antwort (optional)</right>
+            <wrong>nachricht bei falscher Antwort (optional)</wrong>
+            <rightSound>Name der Sounddatei für richtige Antworten (optional)</wrongSound>
+            <wrongSound>Name der Sounddatei für falsche Antworten (optional)</wrongSound>
+        </question>
+        -->
+        <question>
+            <text>Was ist HTML?</text>
+            <answers>
+                <answer correct="true">Eine Textauszeichnungssprache</answer>
+                <answer>Ein Grafikformat</answer>
+                <answer>Eine Programmiersprache</answer>
+            </answers>
+        </question>
+        <question>
+            <text>Was ist der Unterschied zwischen C und C++?</text>
+            <answers>
+                <answer>In C++ wurde der ++-Operator hinzugefügt.</answer>
+                <answer>Es gibt keinen Unterschied</answer>
+                <answer correct="true">C++ wurde um die Objektorientierung erweitert</answer>
+            </answers>
+        </question>
+        <question>
+            <text>Was bedeutet PHP?</text>
+            <answers>
+                <answer>Personal Home Page</answer>
+                <answer correct="true">PHP Hypertext Preprocessor</answer>
+                <answer>Professionell Hypertext Preprocessor</answer>
+            </answers>
+            <right>Gute Antwort!</right>
+            <wrong>Tja, gefailt...</wrong>
+        </question>
+        <question>
+            <text>Was braucht man um PHP auszuführen?</text>
+            <answers>
+                <answer>einen Browser</answer>
+                <answer correct="true">einen Interpreter</answer>
+                <answer>Notepad</answer>
+            </answers>
+            <wrongSound>frage4</wrongSound>
+        </question>
+        <question>
+            <text>Für was nutzt man eine Datenbank?</text>
+            <answers>
+                <answer>Zum Berechnen komplexer Formeln</answer>
+                <answer>Um den Daniel zu ärgern</answer>
+                <answer correct="true">Zum Speichern und Verwalten von Daten</answer>
+            </answers>
+        </question>
+        <question>
+            <text>Kann man PHP kompilieren (in eine ausführbare Binärdatei umwandeln)?</text>
+            <answers>
+                <answer>Na klar!</answer>
+                <answer correct="true">Über Umwege ist es möglich.</answer>
+                <answer>Wie sollte man?</answer>
+            </answers>
+        </question>
+    </questions>
+</quiz>

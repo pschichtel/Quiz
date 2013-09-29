@@ -1,0 +1,65 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    font-size: 100.01%;
+    font-family: Verdana, Arial;
+    color: white;
+}
+body {
+    background-position: -30px;
+    background-repeat: no-repeat;
+}
+div.clear {
+    clear: both;
+}
+#container {
+    width: 800px;
+    margin: 1cm auto;
+    background-image: url('../gfx/dunkeltransparent.png');
+    border-radius: 15px;
+}
+#header {
+    font-size: 200%;
+    text-align: center;
+    font-weight: bold;
+    padding: 50px;
+}
+#colcontainer {
+    
+    /**/
+}
+#col_left {
+    float: left;
+    width: 180px;
+}
+#col_right {
+    float: right;
+    width: 620px;
+    /**/
+    min-height: 500px;
+    background-image: url('../gfx/dunkeltransparent.png');
+    border-radius: 15px;
+}
+#content {
+    margin: 10px;
+}
+#content a, #miscbox a {
+    color: red;
+}
+#miscbox {
+    margin: 5px;
+    padding: 5px;
+    border-radius: 8px;
+    background-image: url('../gfx/dunkeltransparent.png');
+    text-align: center;
+}
+#footer {
+    text-align: center;
+    padding: 3px;
+    /**/
+}
+
+
+.error {
+    color: red;
+}
